@@ -1,1 +1,21 @@
+@font-face {
+    font-family: Ranchers;
+    src: url("../src/assets/fonts/Ranchers-Regular.ttf");
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url("../src/assets/fonts/Roboto-Regular.ttf");
+}
+
 @import "tailwindcss";
+
+@theme {
+    --font-ranchers: Ranchers, "sans-serif";
+    --font-roboto: Roboto, "sans-serif";
+    --color-primary: #10B981;
+    --color-secondary: #9BAEBC;
+    --color-lightgrey: #333333;
+    --color-darkwhite: #F4F4F5;
+    --color-rose: #EF4444;
+}
