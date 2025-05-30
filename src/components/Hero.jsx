@@ -4,7 +4,7 @@ import LotteryBanner from "./LotteryBanner";
 
 const Hero = () => {
   return (
-    <section className="py-4 px-8">
+    <section className="pt-4 px-8">
       <div className="grid grid-cols-4 auto-rows-auto gap-4">
         <aside className="row-span-4">
           <Categories />
