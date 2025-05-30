@@ -8,6 +8,8 @@ import { recommendedArticles } from "../data/recommendedArticles";
 import { smartphones } from "../data/smartphones";
 import HobbiesSection from "../components/HobbiesSection";
 import { hobbies } from "../data/hobbies";
+import NewArticles from "../components/NewArticles";
+import { newArticles } from "../data/newArticles";
 
 const Home = () => {
   return (
@@ -18,6 +20,7 @@ const Home = () => {
       <ArticlesSection articles={recommendedArticles} />
       <ProductsSection headerTitle="Rekomendowane smartfony" products={smartphones} />
       <HobbiesSection headerTitle="Rozwijaj swoje pasje" hobbies={hobbies} />
+      <NewArticles articles={newArticles} />
     </div>
   );
 };
