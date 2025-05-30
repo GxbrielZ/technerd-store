@@ -10,6 +10,9 @@ import HobbiesSection from "../components/HobbiesSection";
 import { hobbies } from "../data/hobbies";
 import NewArticles from "../components/NewArticles";
 import { newArticles } from "../data/newArticles";
+import { gaming } from "../data/gaming";
+import Newsletter from "../components/Newsletter";
+import { popularArticles } from "../data/popularArticles";
 
 const Home = () => {
   return (
@@ -21,6 +24,9 @@ const Home = () => {
       <ProductsSection headerTitle="Rekomendowane smartfony" products={smartphones} />
       <HobbiesSection headerTitle="Rozwijaj swoje pasje" hobbies={hobbies} />
       <NewArticles articles={newArticles} />
+      <ProductsSection headerTitle="Najlepszy sprzęt gamingowy" products={gaming} />
+      <Newsletter />
+      <NewArticles articles={popularArticles} />
     </div>
   );
 };
