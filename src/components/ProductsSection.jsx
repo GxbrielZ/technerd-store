@@ -19,7 +19,7 @@ const ProductsSection = ({ products, headerTitle }) => {
   });
 
   return (
-    <div className="bg-darkwhite py-6 px-4 relative">
+    <div className="bg-darkwhite mt-4 py-6 px-4 relative shadow">
         <h1 className="text-lightgrey font-bold text-xl md:text-2xl mb-6">{headerTitle}</h1>
 
       <div ref={sliderRef} className="keen-slider">
