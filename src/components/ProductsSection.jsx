@@ -1,5 +1,6 @@
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
+import { Link } from "react-router";
 
 const ProductsSection = ({ products, headerTitle }) => {
     const [sliderRef] = useKeenSlider({
@@ -24,16 +25,17 @@ const ProductsSection = ({ products, headerTitle }) => {
 
       <div ref={sliderRef} className="keen-slider">
         {products.map((product) => (
-          <div
+          <Link
             key={product.id}
-            className="keen-slider__slide !w-[220px] bg-white rounded-lg shadow p-3 flex-shrink-0"
+            to={`/product/${product.id}`}
+            className="keen-slider__slide !w-[220px] bg-white rounded-lg shadow p-3 flex-shrink-0 cursor-pointer hover:shadow-lg transition-shadow duration-300"
           >
             <div className="h-40 text-darkwhite flex items-center justify-center text-sm rounded mb-2">
               {product.image ? (
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="h-40 w-auto object-fit rounded"
+                  className="h-40 w-auto object-contain rounded"
                 />
               ) : (
                 "Brak zdjęcia"
@@ -41,7 +43,7 @@ const ProductsSection = ({ products, headerTitle }) => {
             </div>
             <p className="text-sm text-lightgrey font-semibold line-clamp-2 mb-1">{product.name}</p>
             <p className="text-rose font-bold text-lg">{product.price.toFixed(2)} zł</p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
