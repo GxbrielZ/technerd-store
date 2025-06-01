@@ -3,12 +3,14 @@ import { useParams } from 'react-router';
 import { allProducts } from '../data/allProducts';
 import { FiShoppingCart, FiHeart } from 'react-icons/fi';
 import { BsCheckCircleFill } from 'react-icons/bs';
+import { useCart } from '../context/CartContext';
 
 const ProductPage = () => {
   const { productId } = useParams();
   const [product, setProduct] = useState(null);
   const [quantity, setQuantity] = useState(1);
   const [activeTab, setActiveTab] = useState('description');
+  const { addToCart } = useCart();
 
   useEffect(() => {
     const foundProduct = allProducts.find(p => p.id === parseInt(productId));
@@ -28,6 +30,7 @@ const ProductPage = () => {
   }
 
   const handleAddToCart = () => {
+    addToCart(product, quantity);
     console.log(`Dodano ${quantity}x ${product.name} do koszyka.`);
   };
 
