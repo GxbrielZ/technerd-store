@@ -65,7 +65,7 @@ const Cart = () => {
   return (
     <div className="font-roboto bg-darkwhite text-lightgrey py-8 px-4 sm:px-6 lg:px-8 mt-4 min-h-[calc(100vh-200px)]">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-3xl sm:text-4xl font-bold mb-8 text-center">Twój Koszyk</h1>
+        <h1 className="text-3xl font-bold mb-8 text-center md:text-left md:pl-2">Twój Koszyk</h1>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Sekcja produktów w koszyku */}
