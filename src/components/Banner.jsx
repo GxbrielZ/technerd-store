@@ -2,7 +2,7 @@ import heroImg1 from "../assets/hero/hero-image-1.jpg";
 
 const Banner = () => {
   return (
-    <div className="relative w-full h-[300px] md:h-[370px] overflow-hidden rounded-t-xl shadow">
+    <div className="relative w-full h-[700px] md:h-[370px] overflow-hidden md:rounded-t-xl shadow">
       <img
         src={heroImg1}
         alt="Sezon rowerowy"
@@ -18,7 +18,7 @@ const Banner = () => {
         </p>
       </div>
 
-      <div className="absolute bottom-0 w-full bg-darkwhite flex flex-col md:flex-row justify-around text-sm md:text-base text-lightgrey font-medium py-3 z-30 shadow-lg">
+      <div className="absolute bottom-0 w-full bg-darkwhite flex flex-col md:flex-row md:justify-around items-center md:items-start text-md md:text-base text-lightgrey py-3 z-30 shadow-lg">
         <span className="px-4 py-2 cursor-pointer">Okazje na grilla</span>
         <span className="px-4 py-2 cursor-pointer">Wielkanocna wyprzedaż</span>
         <span className="px-4 py-2 cursor-pointer">W zestawie taniej</span>

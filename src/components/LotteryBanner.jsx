@@ -50,7 +50,7 @@ const LotteryBanner = () => {
   };
 
   return (
-    <div className="w-full h-full rounded-b-xl bg-darkwhite shadow text-lightgrey p-2">
+    <div className="w-full h-full md:rounded-b-xl bg-darkwhite shadow text-lightgrey p-2">
       <div className="flex h-full">
         <div className="flex-1 flex flex-col justify-between p-6">
           <div>

@@ -25,7 +25,7 @@ const menuItems = [
 
 const Categories = () => {
   return (
-    <div className="hidden md:block bg-darkwhite shadow p-4 rounded-xl text-lightgrey">
+    <div className="bg-darkwhite shadow p-4 rounded-xl text-lightgrey">
       <div className="flex border-b border-lightgrey mb-4">
         <button className="font-bold border-b-2 border-lightgrey pb-2 px-4 cursor-pointer">
           Produkty
