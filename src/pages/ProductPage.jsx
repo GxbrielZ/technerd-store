@@ -60,7 +60,7 @@ const ProductPage = () => {
                   onClick={() => setActiveTab('description')}
                   className={`px-4 py-2 text-lg font-semibold ${
                     activeTab === 'description' ? 'border-b-2 border-primary text-primary' : 'text-gray-600 hover:text-primary'
-                  } focus:outline-none transition-colors duration-300`}
+                  } focus:outline-none transition-colors duration-300 cursor-pointer`}
                 >
                   Opis
                 </button>
@@ -68,7 +68,7 @@ const ProductPage = () => {
                   onClick={() => setActiveTab('specs')}
                   className={`ml-4 px-4 py-2 text-lg font-semibold ${
                     activeTab === 'specs' ? 'border-b-2 border-primary text-primary' : 'text-gray-600 hover:text-primary'
-                  } focus:outline-none transition-colors duration-300`}
+                  } focus:outline-none transition-colors duration-300 cursor-pointer`}
                 >
                   Specyfikacja
                 </button>
@@ -109,7 +109,7 @@ const ProductPage = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-8">
-              <div className="flex items-center border border-gray-300 rounded-lg">
+              <div className="flex items-center border border-gray-300 rounded-lg w-36 md:w-auto">
                 <button
                   onClick={() => setQuantity(prev => Math.max(1, prev - 1))}
                   className="px-4 py-2 text-xl font-bold text-lightgrey hover:bg-[#ededed] rounded-l-lg duration-200 cursor-pointer"
