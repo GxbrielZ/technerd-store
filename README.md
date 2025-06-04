@@ -18,11 +18,11 @@ Below you'll find a preview of TechNerd's key functionalities and responsiveness
 
 ### Cart
 
-![TechNerd - Cart](https://raw.githubusercontent.com/GxbrielZ/technerd-store/main/src/assets/preview/cart.gif)
+![TechNerd - Cart](https://raw.githubusercontent.com/GxbrielZ/technerd-store/main/src/assets/preview/second-product-details.gif)
 
 ### Daily Discount Draw
 
-![TechNerd - Daily Discount Draw](https://raw.githubusercontent.com/GxbrielZ/technerd-store/main/src/assets/preview/daily-discount.gif)
+![TechNerd - Daily Discount Draw](https://raw.githubusercontent.com/GxbrielZ/technerd-store/main/src/assets/preview/lottery.gif)
 
 ### Mobile Layout
 
