@@ -72,7 +72,7 @@ const Cart = () => {
           <div className="lg:col-span-2 bg-white rounded-lg shadow-md p-4 sm:p-6 lg:p-8">
             <h2 className="text-2xl font-bold mb-6 text-lightgrey">Produkty w koszyku</h2>
             {cartItems.map(item => (
-              <div key={item.id} className="flex flex-col sm:flex-row items-center justify-between border-b border-gray-200 py-4 last:border-b-0">
+              <div key={item.id} className="flex flex-col gap-2 sm:flex-row items-center justify-between border-b border-gray-200 py-4 last:border-b-0">
                 <div className="flex items-center w-full sm:w-auto mb-4 sm:mb-0">
                   <img
                     src={item.image || 'https://via.placeholder.com/80'}
@@ -91,7 +91,7 @@ const Cart = () => {
                   <div className="flex items-center border border-gray-300 rounded-lg">
                     <button
                       onClick={() => updateQuantity(item.id, item.quantity - 1)}
-                      className="px-3 py-1 text-lg font-bold text-lightgrey hover:bg-gray-200 rounded-l-lg duration-200"
+                      className="px-3 py-1 text-lg font-bold text-lightgrey hover:bg-gray-200 rounded-l-lg duration-200 cursor-pointer"
                     >
                       -
                     </button>
@@ -105,7 +105,7 @@ const Cart = () => {
                     />
                     <button
                       onClick={() => updateQuantity(item.id, item.quantity + 1)}
-                      className="px-3 py-1 text-lg font-bold text-lightgrey hover:bg-gray-200 rounded-r-lg duration-200"
+                      className="px-3 py-1 text-lg font-bold text-lightgrey hover:bg-gray-200 rounded-r-lg duration-200 cursor-pointer"
                     >
                       +
                     </button>
@@ -113,7 +113,7 @@ const Cart = () => {
                   <p className="text-lg font-bold text-primary w-24 text-right">{(item.price * item.quantity).toFixed(2)} zł</p>
                   <button
                     onClick={() => removeFromCart(item.id)}
-                    className="p-2 text-red-500 hover:text-red-700 duration-200"
+                    className="p-2 text-red-500 hover:text-red-700 duration-200 cursor-pointer"
                     title="Usuń z koszyka"
                   >
                     <FiTrash2 size={20} />
@@ -146,7 +146,7 @@ const Cart = () => {
                 />
                 <button
                   onClick={handleApplyCoupon}
-                  className="bg-primary hover:bg-[#169168] text-darkwhite px-4 py-2 rounded-r-lg font-semibold duration-300"
+                  className="bg-primary hover:bg-[#169168] text-darkwhite px-4 py-2 rounded-r-lg font-semibold duration-300 cursor-pointer"
                   disabled={discountApplied}
                 >
                   Zastosuj
@@ -164,7 +164,7 @@ const Cart = () => {
                   <span className="font-semibold">Zastosowany kupon: {appliedDiscountCode.display}</span>
                   <button
                     onClick={handleRemoveDiscount}
-                    className="text-red-500 hover:text-red-700 duration-200 ml-4"
+                    className="text-red-500 hover:text-red-700 duration-200 ml-4 cursor-pointer"
                     title="Usuń kupon"
                   >
                     <FiXCircle size={20} />
